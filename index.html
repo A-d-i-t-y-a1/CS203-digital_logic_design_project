@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS203</title>
+    <style>
+        body{
+            background-image: url('bg.jpg');
+            z-index: -1;
+            overflow: hidden;
+            margin: 0px;
+        }
+        header{
+            color: white;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+        .container{
+            margin-top: 5vh;
+            display: flex;
+            flex-wrap: wrap;
+            height: 70vh;
+            width: 100vw;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        .box{
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            height: 30%;
+            width: 20%;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 4px;
+        }
+        #question{
+            color: white;
+            width: 25%;
+            margin: auto;
+            margin-top: 3%;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>CS203 - DIGITAL LOGIC DESIGN</header>
+    <div id="question">
+        What you want to visualise?
+    </div>
+    <div class="container">
+        <div class="box" id="item-1">
+            <a href="piso_nof.html">Parallel In Serial Out (PISO)</a> 
+        </div>
+        <div class="box" id="item-2">
+            <a href="siso_nof.html">Serial In Serial Out (SISO)</a>  
+        </div>
+        <div class="box" id="item-3">
+            <a href="pipo_nof.html">Parallel In Parallel Out (PIPO)</a>  
+        </div>
+        <div class="box" id="item-4">
+            <a href="sipo_nof.html">Serial In Parallel Out (SIPO)</a> 
+        </div>
+        <div class="box" id="item-5">
+            <a href="lsr_nof.html">Logical Shift Right (LSR)</a> 
+        </div>
+        <div class="box" id="item-6">
+            <a href="asr_nof.html">Arithemetic Shift Right (ASR)</a> 
+        </div>
+        <div class="box" id="item-7">
+            <a href="ror_nof.html">Rotate Right (ROR)</a>  
+        </div>
+        <div class="box" id="item-8">
+            <a href="lor_nof.html">Rotate Left (LOR)</a>
+        </div>
+    </div>
+</body>
+</html>

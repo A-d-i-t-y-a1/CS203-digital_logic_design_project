@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS203</title>
+    <style>
+        body{
+            background-image: url('bg.jpg');
+            z-index: -1;
+            overflow: hidden;
+            margin: 0px;
+        }
+        header{
+            color: white;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+        .container{
+            margin-top: 15vh;
+            display: flex;
+            flex-wrap: wrap;
+            height: 70vh;
+            width: 100vw;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        .box{
+            border: 2px solid white;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        #bit1{
+            background-image: url('one.png');
+            position: relative;
+            border: 2px solid white;
+            height: 50px;
+            width: 50px;
+            animation-name: bit-1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition-delay: 2s;
+        }
+        @keyframes bit-1 {
+            0%{
+                right: 0vw;
+                bottom: 0vh;
+            }
+            10%{
+                right: 15vw;
+                bottom: 0vh;
+            }
+            20%{
+                right: 15vw;
+                bottom: 23vh;
+            }
+            60%{
+                right: -37vw;
+                bottom: 23vh;
+            }
+            70%{
+                right: -37vw;
+                bottom: 0vh;
+            }
+            100%{
+                right: -37vw;
+                bottom: 0vh;
+            }
+        }
+        #bit2{
+            background-image: url('zero.png');
+            position: relative;
+            border: 2px solid white;
+            height: 50px;
+            width: 50px;
+            animation-name: bit-2;
+            transition-delay: 2s;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bit-2 {
+            0%{
+                right: 0px;
+            }
+            80%{
+                right: 37vw;
+            }
+            100%{
+                right: 37vw;
+            }
+        }
+        .description1{
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            color: white;
+            font-size: 30px;
+            animation-name: pi;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition-delay: 2s;
+        }
+        @keyframes pi{
+            0%{
+            }
+            68%{
+                visibility: hidden;
+            }
+            70%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        .input{
+            position: absolute;
+            bottom: 5px;
+            left: 45vw;
+            color: white;
+            font-size: 30px;
+            animation-name: i;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition-delay: 2s;
+        }
+        @keyframes i{
+            0%{
+            }
+            68%{
+                visibility: hidden;
+            }
+            70%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        .output{
+            position: absolute;
+            bottom: 5px;
+            left: 45vw;
+            color: white;
+            font-size: 30px;
+            animation-name: o;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition-delay: 2s;
+        }
+        @keyframes o{
+            0%{
+                visibility: hidden;
+            }
+            40%{
+                visibility: hidden;
+            }
+            68%{
+                visibility: hidden;
+            }
+            70%{
+                visibility: visible;
+            }
+            100%{
+                visibility: visible;
+            }
+        }
+        .description2{
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            color: white;
+            font-size: 30px;
+            animation-name: po;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition-delay: 2s;
+            visibility: hidden;
+        }
+        @keyframes po{
+            0%{
+                visibility: hidden;
+            }
+            68%{
+                visibility: hidden;
+            }
+            70%{
+                visibility: visible;
+            }
+            100%{
+                visibility: visible;
+            }
+        }  
+    </style>
+</head>
+<body>
+    <header>Rotate Left using two flip flop</header>
+    <div class="container">
+        <div class="box" id="item-1">
+            <div id="bit1">
+
+            </div>
+        </div>
+        <div class="box" id="item-2">
+            <div id="bit2">
+                
+            </div>
+        </div>
+    </div>
+    <div class="description1">
+        Under process...
+    </div>
+    <div class="input">
+        INPUT-10
+    </div>
+    <div class="output">
+        OUTPUT-01
+    </div>
+    <div class="description2">
+        Operation complete
+    </div>
+</body>
+</html>
