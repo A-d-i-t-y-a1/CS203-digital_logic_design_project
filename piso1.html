@@ -34,145 +34,75 @@
             border: 2px solid white;
             height: 150px;
             width: 150px;
-            display: flex;
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-            justify-content: space-evenly;
         }
-        #bit1{
-            background-image: url('one.png');
-            position: relative;
-            border: 2px solid white;
-            height: 50px;
-            width: 50px;
-            animation-name: bit-1;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            transition-delay: 2s;
-        }
-        @keyframes bit-1 {
-            0%{
-                left: 0px;
-            }
-            80%{
-                left: 22vw;
-            }
-            100%{
-                left: 22vw;
-            }
-        }
-        #bit2{
-            background-image: url('zero.png');
-            position: relative;
-            border: 2px solid white;
-            height: 50px;
-            width: 50px;
-            animation-name: bit-2;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            transition-delay: 2s;
-        }
-        @keyframes bit-2 {
-            0%{
-                left: 0px;
-            }
-            80%{
-                left: 22vw;
-            }
-            100%{
-                left: 22vw;
-            }
-        }
-        #bit3{
-            background-image: url('one.png');
-            position: relative;
-            border: 2px solid white;
-            height: 50px;
-            width: 50px;
-            animation-name: bit-3;
-            transition-delay: 2s;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-        }
-        @keyframes bit-3 {
-            0%{
-                left: 0px;
-            }
-            80%{
-                left: 22vw;
-            }
-            100%{
-                left: 22vw;
-            }
-        }
-        #bit4{
-            background-image: url('zero.png');
-            position: relative;
-            border: 2px solid white;
-            height: 50px;
-            width: 50px;
-            animation-name: bit-4;
-            transition-delay: 2s;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-        }
-        @keyframes bit-4 {
-            0%{
-                left: 0px;
-            }
-            50%{
-                visibility: hidden;
-            }
-            70%{
-                visibility: hidden;
-            }
-            100%{
-                visibility: hidden;
-                left: 22vw;
-            }
+        #item-2{
+            border: none;
         }
         .container2{
+            margin-top: 5vh;
             display: flex;
             flex-wrap: wrap;
             height: 10vh;
-            width: 90vw;
+            width: 75vw;
             margin: auto;
             align-items: center;
             justify-items: center;
             text-align: center;
             justify-content: space-evenly;
         }
-        .bits{
-            margin-top: 10vh;
-            border: 2px solid white;
-            height: 50px;
-            width: 50px;
-            position: relative;
-            right: 34vw;
-        }
-        #bit0{
-            background-image: url('zero.png');
+        #bit-1{
+            background-image: url('one.png');
             position: relative;
             border: 2px solid white;
             height: 50px;
             width: 50px;
-            animation-name: bit-0;
+            bottom: 60px;
+            margin: auto;
+            align-items: flex-end;
+            animation-name: bit1;
+            animation-duration: 15s;
+            animation-iteration-count: 3;
             transition-delay: 2s;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
         }
-        @keyframes bit-0 {
+        #bit-2{
+            background-image: url('one.png');
+            position: relative;
+            border: 2px solid white;
+            height: 50px;
+            width: 50px;
+            bottom: 60px;
+            margin: auto;
+            align-items: flex-end;
+            animation-name: bit2;
+            animation-duration: 15s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+        }
+        @keyframes bit1 {
             0%{
                 bottom: 0px;
+                left: 0px;
+                visibility: visible;
             }
-            70%{
-                bottom: 50vh;
+            50%{
+                bottom: 240px;
+                left: 0px;
+                visibility: visible;
             }
             100%{
-                bottom: 50vh;
+                bottom: 240px;
+                left: 400px;
+                visibility: hidden;
             }
-        }  
+        }
+        @keyframes bit2 {
+            0%{
+                visibility: hidden;
+            }
+            100%{
+                visibility:hidden;
+            }
+        }
         .description1{
             position: absolute;
             bottom: 5px;
@@ -180,17 +110,18 @@
             color: white;
             font-size: 30px;
             animation-name: pi;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
+            animation-duration: 15s;
+            animation-iteration-count: 3;
             transition-delay: 2s;
         }
         @keyframes pi{
             0%{
+                visibility: visible;
             }
-            68%{
-                visibility: hidden;
+            49%{
+                visibility: visible;
             }
-            70%{
+            50%{
                 visibility: hidden;
             }
             100%{
@@ -204,17 +135,18 @@
             color: white;
             font-size: 30px;
             animation-name: i;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
+            animation-duration: 15s;
+            animation-iteration-count: 3;
             transition-delay: 2s;
         }
         @keyframes i{
             0%{
+                visibility: visible;
             }
-            68%{
-                visibility: hidden;
+            49%{
+                visibility: visible;
             }
-            70%{
+            50%{
                 visibility: hidden;
             }
             100%{
@@ -228,21 +160,18 @@
             color: white;
             font-size: 30px;
             animation-name: o;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
+            animation-duration: 15s;
+            animation-iteration-count: 3;
             transition-delay: 2s;
         }
         @keyframes o{
             0%{
                 visibility: hidden;
             }
-            40%{
+            50%{
                 visibility: hidden;
             }
-            68%{
-                visibility: hidden;
-            }
-            70%{
+            51%{
                 visibility: visible;
             }
             100%{
@@ -256,8 +185,8 @@
             color: white;
             font-size: 30px;
             animation-name: po;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
+            animation-duration: 15s;
+            animation-iteration-count: 3;
             transition-delay: 2s;
             visibility: hidden;
         }
@@ -265,58 +194,47 @@
             0%{
                 visibility: hidden;
             }
-            68%{
+            50%{
                 visibility: hidden;
             }
-            70%{
+            51%{
                 visibility: visible;
             }
             100%{
                 visibility: visible;
             }
-        }  
+        }
     </style>
 </head>
 <body>
-    <header>Logical Shift Right using four flip flop</header>
+    <header>Parallel In Serial Out using one flip flop</header>
     <div class="container">
         <div class="box" id="item-1">
-            <div id="bit1">
-
-            </div>
+            
         </div>
         <div class="box" id="item-2">
-            <div id="bit2">
-                
-            </div>
-        </div>
-        <div class="box" id="item-3">
-            <div id="bit3">
-                
-            </div>
-        </div>
-        <div class="box" id="item-4">
-            <div id="bit4">
-                
-            </div>
+            
         </div>
     </div>
     <div class="container2">
-        <div class="bits" id="bit0">
+        <div class="bits" id="bit-1">
+        
+        </div>
+        <div class="bits" id="bit-2">
         
         </div>
     </div>
     <div class="description1">
-        Under process...
+        Parallel In
     </div>
     <div class="input">
-        INPUT-1010
+        INPUT-1101
     </div>
-    <div class="output">
-        OUTPUT-0101
-    </div>
+    <!-- <div class="output">
+        OUTPUT-1101
+    </div> -->
     <div class="description2">
-        Operation complete
+        Serial Out
     </div>
 </body>
 </html>

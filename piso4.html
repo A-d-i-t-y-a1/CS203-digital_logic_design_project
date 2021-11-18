@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS203</title>
+    <style>
+        body{
+            background-image: url('bg.jpg');
+            z-index: -1;
+            overflow: hidden;
+            margin: 0px;
+        }
+        header{
+            color: white;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 2.2rem;
+            font-weight: bold;
+
+        }
+        .container{
+            margin-top: 15vh;
+            display: flex;
+            flex-wrap: wrap;
+            height: 70vh;
+            width: 100vw;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        .box{
+            border: 2px solid white;
+            height: 150px;
+            width: 150px;
+        }
+        #item-5{
+            border: none;
+        }
+        .container2{
+            margin-top: 5vh;
+            display: flex;
+            flex-wrap: wrap;
+            height: 10vh;
+            width: 94vw;
+            margin: auto;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        #bit-1{
+            background-image: url('one.png');
+            position: relative;
+            border: 2px solid white;
+            height: 50px;
+            width: 50px;
+            bottom: 60px;
+            margin: auto;
+            align-items: flex-end;
+            animation-name: bit1;
+            animation-duration: 30s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+        }
+        #bit-2{
+            background-image: url('one.png');
+            position: relative;
+            border: 2px solid white;
+            height: 50px;
+            width: 50px;
+            bottom: 60px;
+            margin: auto;
+            align-items: flex-end;
+            animation-name: bit2;
+            animation-duration: 30s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+        }
+        #bit-3{
+            background-image: url('zero.png');
+            position: relative;
+            border: 2px solid white;
+            height: 50px;
+            width: 50px;
+            bottom: 60px;
+            margin: auto;
+            align-items: flex-end;
+            animation-name: bit3;
+            animation-duration: 30s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+        }
+        #bit-4{
+            background-image: url('one.png');
+            position: relative;
+            border: 2px solid white;
+            height: 50px;
+            width: 50px;
+            bottom: 60px;
+            margin: auto;
+            align-items: flex-end;
+            animation-name: bit4;
+            animation-duration: 30s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+        }
+        #bit-5{
+            background-image: url('one.png');
+            position: relative;
+            border: 2px solid white;
+            height: 50px;
+            width: 50px;
+            bottom: 60px;
+            margin: auto;
+            align-items: flex-end;
+            animation-name: bit5;
+            animation-duration: 30s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+        }
+        @keyframes bit1 {
+            0%{
+                bottom: 0px;
+                left: 0px;
+            }
+            20%{
+                bottom: 240px;
+                left: 0px;
+            }
+            40%{
+                bottom: 240px;
+                left: 240px;
+            }
+            60%{
+                bottom: 240px;
+                left: 480px;
+            }
+            80%{
+                bottom: 240px;
+                left: 720px;
+            }
+            100%{
+                bottom: 240px;
+                left: 960px;
+            }
+        }
+        
+        @keyframes bit2 {
+            0%{
+                bottom: 0px;
+                left: 0px;
+                visibility: visible;
+            }
+            20%{
+                bottom: 240px;
+                left: 0px;
+                visibility: visible;
+            }
+            40%{
+                bottom: 240px;
+                left: 240px;
+                visibility: visible;
+            }
+            60%{
+                bottom: 240px;
+                left: 480px;
+                visibility: visible;
+            }
+            80%{
+                bottom: 240px;
+                left: 720px;
+                visibility: hidden;
+            }
+            100%{
+                bottom: 240px;
+                left: 1000px;
+                visibility: hidden;
+            }
+        }
+        @keyframes bit3 {
+            0%{
+                bottom: 0px;
+                left: 0px;
+                visibility: visible;
+            }
+            20%{
+                bottom: 240px;
+                left: 0px;
+                visibility: visible;
+            }
+            40%{
+                bottom: 240px;
+                left: 240px;
+                visibility: visible;
+            }
+            60%{
+                bottom: 240px;
+                left: 480px;
+                visibility: hidden;
+            }
+            80%{
+                bottom: 240px;
+                left: 720px;
+                visibility: hidden;
+            }
+            100%{
+                bottom: 240px;
+                left: 1000px;
+                visibility: hidden;
+            }
+        }
+        @keyframes bit4 {
+            0%{
+                bottom: 0px;
+                left: 0px;
+                visibility: visible;
+            }
+            20%{
+                bottom: 240px;
+                left: 0px;
+                visibility: visible;
+            }
+            40%{
+                bottom: 240px;
+                left: 240px;
+                visibility: hidden;
+            }
+            60%{
+                bottom: 240px;
+                left: 574px;
+                visibility: hidden;
+            }
+            80%{
+                bottom: 240px;
+                left: 711px;
+                visibility: hidden;
+            }
+            100%{
+                bottom: 240px;
+                left: 1000px;
+                visibility: hidden;
+            }
+        }
+        @keyframes bit5 {
+            0%{
+                visibility: hidden;
+            }
+            100%{
+                visibility:hidden;
+            }
+        }
+        .description1{
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            color: white;
+            font-size: 30px;
+            animation-name: pi;
+            animation-duration: 30s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+        }
+        @keyframes pi{
+            0%{
+                visibility: visible;
+            }
+            19%{
+                visibility: visible;
+            }
+            20%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        .input{
+            position: absolute;
+            bottom: 5px;
+            left: 45vw;
+            color: white;
+            font-size: 30px;
+            animation-name: i;
+            animation-duration: 30s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+        }
+        @keyframes i{
+            0%{
+                visibility: visible;
+            }
+            19%{
+                visibility: visible;
+            }
+            20%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        .output{
+            position: absolute;
+            bottom: 5px;
+            left: 45vw;
+            color: white;
+            font-size: 30px;
+            animation-name: o;
+            animation-duration: 30s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+        }
+        @keyframes o{
+            0%{
+                visibility: hidden;
+            }
+            20%{
+                visibility: hidden;
+            }
+            21%{
+                visibility: visible;
+            }
+            100%{
+                visibility: visible;
+            }
+        }
+        .description2{
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            color: white;
+            font-size: 30px;
+            animation-name: po;
+            animation-duration: 30s;
+            animation-iteration-count: 3;
+            transition-delay: 2s;
+            visibility: hidden;
+        }
+        @keyframes po{
+            0%{
+                visibility: hidden;
+            }
+            20%{
+                visibility: hidden;
+            }
+            21%{
+                visibility: visible;
+            }
+            100%{
+                visibility: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Parallel In Serial Out using four flip flop</header>
+    <div class="container">
+        <div class="box" id="item-1">
+            
+        </div>
+        <div class="box" id="item-2">
+            
+        </div>
+        <div class="box" id="item-3">
+            
+        </div>
+        <div class="box" id="item-4">
+            
+        </div>
+        <div class="box" id="item-5">
+            
+        </div>
+    </div>
+    <div class="container2">
+        <div class="bits" id="bit-1">
+        
+        </div>
+        <div class="bits" id="bit-2">
+        
+        </div>
+        <div class="bits" id="bit-3">
+        
+        </div>
+        <div class="bits" id="bit-4">
+        
+        </div>
+        <div class="bits" id="bit-5">
+        
+        </div>
+    </div>
+    <div class="description1">
+        Parallel In
+    </div>
+    <div class="input">
+        INPUT-1101
+    </div>
+    <!-- <div class="output">
+        OUTPUT-1101
+    </div> -->
+    <div class="description2">
+        Serial Out
+    </div>
+</body>
+</html>
