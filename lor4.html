@@ -222,65 +222,6 @@
                 visibility: hidden;
             }
         }
-        #input{
-            position: absolute;
-            bottom: 5px;
-            left: 45vw;
-            color: white;
-            font-size: 30px;
-            visibility: hidden;
-        }
-        .animate6{
-            animation-name: i;
-            animation-duration: 10s;
-            animation-iteration-count: 1;
-            transition-delay: 2s; 
-        }
-        @keyframes i{
-            0%{
-                visibility: visible;
-            }
-            68%{
-                visibility: hidden;
-            }
-            70%{
-                visibility: hidden;
-            }
-            100%{
-                visibility: hidden;
-            }
-        }
-        #output{
-            position: absolute;
-            bottom: 5px;
-            left: 45vw;
-            color: white;
-            font-size: 30px;
-            visibility: hidden;
-        }
-        .animate7{
-            animation-name: o;
-            animation-duration: 10s;
-            animation-iteration-count: 1;
-            transition-delay: 2s;
-        }
-        @keyframes o{
-            0%{
-                visibility: hidden;
-            }
-            40%{
-                visibility: hidden;
-            }
-            68%{
-                visibility: hidden;
-            }
-            70%{
-                visibility: visible;
-            }
-            100%{
-                visibility: visible;
-            }
-        }
         #description2{
             position: absolute;
             bottom: 5px;
@@ -356,12 +297,6 @@
     <div id="description1">
         Under process...
     </div>
-    <div id="input">
-        INPUT-1001
-    </div>
-    <div id="output">
-        OUTPUT-0011
-    </div>
     <div id="description2">
         Operation complete
     </div>
@@ -377,10 +312,6 @@
             targetElement.className = "animate4";
             var targetElement = document.getElementById("description1");
             targetElement.className = "animate5";
-            var targetElement = document.getElementById("input");
-            targetElement.className = "animate6";
-            var targetElement = document.getElementById("output");
-            targetElement.className = "animate7";
             var targetElement = document.getElementById("description2");
             targetElement.className = "animate8";
         }
