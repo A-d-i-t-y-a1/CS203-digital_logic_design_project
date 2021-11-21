@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS203</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
     <style>
         body{
             background-image: url('bg.jpg');
@@ -19,6 +22,49 @@
             font-size: 2.2rem;
             font-weight: bold;
 
+        }
+        #menu{
+            position: absolute;
+            left: 35.5vw;
+            text-align: center;
+            margin-top: 5vh;
+        }
+        #label{
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 3vh;
+            font-family: 'M PLUS 1', sans-serif;
+        }
+        #color{
+            margin-top: 5px;
+            size: 30;
+            height: 20px;
+            margin-bottom: 5px;
+            background-color: #2e2e33;
+            color: white;
+            border: 1px solid white;
+        }
+        #go{
+            height: 30px;
+            font-size: 1rem;
+            background-color: black;
+            color: white;
+            font-family: 'M PLUS 1', sans-serif;
+            border: 1px solid white;
+        }
+        .animate10{
+            animation-name: button;
+            animation-duration: 20s;
+            animation-iteration-count: 1;
+            transition-delay: 2s;
+        }
+        @keyframes button {
+            0%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
         }
         .container{
             margin-top: 15vh;
@@ -42,110 +88,109 @@
         #item-4{
             border: none;
         }
-        .container2{
-            margin-top: 5vh;
-            display: flex;
-            flex-wrap: wrap;
-            height: 10vh;
-            width: 94vw;
-            margin: auto;
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-            justify-content: space-evenly;
-        }
         #bit-1{
-            background-image: url('one.png');
             position: relative;
+            color: white;
+            background-color: #2e2e33;
+            font-size: 3rem;
+            font-weight: bold;
             border: 2px solid white;
             height: 50px;
-            width: 50px;
-            bottom: 60px;
+            width: 50px;  
+            visibility: hidden; 
             margin: auto;
-            align-items: flex-end;
+        }
+        .animate1{
             animation-name: bit1;
-            animation-duration: 30s;
-            animation-iteration-count: 3;
+            animation-duration: 20s;
+            animation-iteration-count: 1;
             transition-delay: 2s;
         }
         #bit-2{
-            background-image: url('one.png');
+            color: white;
+            background-color: #2e2e33;
+            font-size: 3rem;
+            font-weight: bold;
             position: relative;
             border: 2px solid white;
             height: 50px;
             width: 50px;
-            bottom: 60px;
+            visibility: hidden;
             margin: auto;
-            align-items: flex-end;
+        }
+        .animate2{
             animation-name: bit2;
-            animation-duration: 30s;
-            animation-iteration-count: 3;
+            animation-duration: 20s;
+            animation-iteration-count: 1;
             transition-delay: 2s;
         }
         @keyframes bit1 {
             0%{
-                bottom: -50px;
+                bottom: -8.33vh;
                 left: 0px;
                 visibility: visible;
             }
             25%{
-                bottom: -50px;
-                left: 280px;
+                bottom: -8.33vh;
+                left: 49.5vh;
                 visibility: visible;
             }
             50%{
-                bottom: -50px;
-                left: 570px;
+                bottom: -8.33vh;
+                left: 99vh;
                 visibility: visible;
             }
             75%{
-                bottom: -50px;
-                left: 860px;
+                bottom: -8.33vh;
+                left: 148.5vh;
                 visibility: hidden;
             }
             100%{
-                bottom: -50px;
+                bottom: -8.33vh;
                 left: 860px;
                 visibility: hidden;
             }
         }
         @keyframes bit2 {
             0%{
-                bottom: 4px;
+                bottom: 0.66vh;
                 left: 0px;
                 visibility: hidden;
             }
             25%{
-                bottom: 4px;
+                bottom: 0.66vh;
                 left: 0px;
                 visibility: hidden;
             }
             50%{
-                bottom: 4px;
-                left: 280px;
+                bottom: 0.66vh;
+                left: 49.5vh;
                 visibility: visible;
             }
             75%{
-                bottom: 4px;
-                left: 570px;
+                bottom: 0.66vh;
+                left: 99vh;
                 visibility: visible;
             }
             100%{
-                bottom: 4px;
-                left: 860px;
+                bottom: 0.66vh;
+                left: 148.5vh;
                 visibility: hidden;
             }
         }
-        .description1{
+        #description1{
             position: absolute;
             bottom: 5px;
             left: 5px;
             color: white;
             font-size: 30px;
+            visibility: hidden;
+        }
+        .animate5{
             animation-name: pi;
-            animation-duration: 30s;
-            animation-iteration-count: 3;
-            transition-delay: 2s;
+            animation-duration: 20s;
+            animation-iteration-count: 1;
+            transition-delay: 2s; 
         }
         @keyframes pi{
             0%{
@@ -161,67 +206,19 @@
                 visibility: hidden;
             }
         }
-        .input{
-            position: absolute;
-            bottom: 5px;
-            left: 45vw;
-            color: white;
-            font-size: 30px;
-            animation-name: i;
-            animation-duration: 30s;
-            animation-iteration-count: 3;
-            transition-delay: 2s;
-        }
-        @keyframes i{
-            0%{
-                visibility: visible;
-            }
-            49%{
-                visibility: visible;
-            }
-            50%{
-                visibility: hidden;
-            }
-            100%{
-                visibility: hidden;
-            }
-        }
-        .output{
-            position: absolute;
-            bottom: 5px;
-            left: 45vw;
-            color: white;
-            font-size: 30px;
-            animation-name: o;
-            animation-duration: 30s;
-            animation-iteration-count: 3;
-            transition-delay: 2s;
-        }
-        @keyframes o{
-            0%{
-                visibility: hidden;
-            }
-            50%{
-                visibility: hidden;
-            }
-            51%{
-                visibility: visible;
-            }
-            100%{
-                visibility: visible;
-            }
-        }
-        .description2{
+        #description2{
             position: absolute;
             bottom: 5px;
             right: 5px;
             color: white;
             font-size: 30px;
-            animation-name: po;
-            animation-duration: 30s;
-            animation-iteration-count: 3;
-            transition-delay: 2s;
             visibility: hidden;
+        }
+        .animate6{
+            animation-name: po;
+            animation-duration: 20s;
+            animation-iteration-count: 1;
+            transition-delay: 2s;
         }
         @keyframes po{
             0%{
@@ -241,6 +238,13 @@
 </head>
 <body>
     <header>Serial In Serial Out using two flip flop</header>
+    <div id="menu">
+        <label id="label" for="color">Enter a 2 bit number (please enter preceding 0)</label>
+        <br>
+        <input type="text" name="color" size="30" id="color" value=""/>
+        <br>
+        <button id="go" onclick="DoAnimation();">Go</button>
+    </div>
     <div class="container">
         <div class="box" id="item-1">
                 <div class="bits" id="bit-1">
@@ -260,14 +264,46 @@
             
         </div>
     </div>
-    <div class="description1">
+    <div id="description1">
         Serial In
     </div>
-    <div class="input">
-        INPUT-1101
-    </div>
-    <div class="description2">
+    <div id="description2">
         Serial Out
     </div>
+    <script>
+        function DoAnimation() {
+            var targetElement = document.getElementById("bit-1");
+            targetElement.className = "animate1";
+            var targetElement = document.getElementById("bit-2");
+            targetElement.className = "animate2";
+            var targetElement = document.getElementById("description1");
+            targetElement.className = "animate5";
+            var targetElement = document.getElementById("description2");
+            targetElement.className = "animate6";
+            var targetElement = document.getElementById("go");
+            targetElement.className = "animate10";
+        }
+        var u = document.getElementById("bit-1");
+        var v = document.getElementById("bit-2");
+        var input = document.getElementById('color');
+        var button = document.querySelector('button');
+        button.addEventListener('click', function( event ) {
+                event.preventDefault();    
+                var color = input.value;
+                if(color[1]==1){
+                    v.innerHTML= "<div>1</div>" ;
+                }
+                else if(color[1]==0){
+                    v.innerHTML= "<div>0</div>" ;
+                }
+                if(color[0]==1){
+                    u.innerHTML= "<div>1</div>" ;
+                }
+                else if(color[0]==0){
+                    u.innerHTML= "<div>0</div>" ;
+                }
+            }
+        ); 
+    </script>
 </body>
 </html>
