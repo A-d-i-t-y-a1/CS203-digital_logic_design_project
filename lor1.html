@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS203</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
     <style>
         body{
             background-image: url('bg.jpg');
@@ -21,25 +24,33 @@
         }
         #menu{
             position: absolute;
-            left: 33vw;
+            left: 35.5vw;
             text-align: center;
             margin-top: 5vh;
         }
+        
         #label{
             color: white;
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-bottom: 3vh;
+            font-family: 'M PLUS 1', sans-serif;
         }
         #color{
             margin-top: 5px;
             size: 30;
+            height: 20px;
             margin-bottom: 5px;
+            background-color: #2e2e33;
+            color: white;
+            border: 1px solid white;
         }
         #go{
-            height: 25px;
+            height: 30px;
             font-size: 1rem;
             background-color: black;
             color: white;
+            font-family: 'M PLUS 1', sans-serif;
+            border: 1px solid white;
         }
         .container{
             margin-top: 15vh;
@@ -65,7 +76,7 @@
         #bit1{
             position: relative;
             color: white;
-            background-color: black;
+            background-color: #2e2e33;
             font-size: 3rem;
             font-weight: bold;
             border: 2px solid white;
@@ -160,24 +171,14 @@
                 visibility: visible;
             }
         }  
-        span{
-            position: absolute;
-            left: 40vw;
-            color: white;
-            border: 2px solid white;
-            margin: auto;
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
     <header>Rotate Left using one flip flop</header>
     <div id="menu">
-        <label id="label" for="color">Enter a 4 bit number (please enter preceding 0)</label>
+        <label id="label" for="color">Enter a 1 bit number (please enter preceding 0)</label>
         <br>
-        <input type="text" name="color" size="20" id="color" value=""/>
+        <input type="text" name="color" size="30" id="color" value=""/>
         <br>
         <button id="go" onclick="DoAnimation();">Go</button>
     </div>
@@ -188,21 +189,10 @@
             </div>
         </div>
     </div>
-    <div class="container2">
-        <div class="bits" id="bit0">
-        
-        </div>
-    </div>
-    <div class="description1">
+    <div id="description1">
         Under process...
     </div>
-    <div class="input">
-        INPUT-1
-    </div>
-    <div class="output">
-        OUTPUT-1
-    </div>
-    <div class="description2">
+    <div id="description2">
         Operation complete
     </div>
     <script>
@@ -213,6 +203,8 @@
             targetElement.className = "animate5";
             var targetElement = document.getElementById("description2");
             targetElement.className = "animate6";
+            var targetElement = document.getElementById("go");
+            targetElement.className = "animate10";
         }
         var u = document.getElementById("bit1");
         var input = document.getElementById('color');
